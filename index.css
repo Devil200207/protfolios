@@ -465,3 +465,89 @@ p {
   background: #3B5998;
   color: white;
 } */
+
+/* Minimal Responsive Improvements - Non-intrusive */
+
+/* Basic mobile adjustments without breaking existing layout */
+@media (max-width: 768px) {
+  /* Ensure images don't overflow on mobile */
+  .artist img, .threed img, .cass img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Better spacing for mobile sections */
+  .artist, .threed, .cass {
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  /* Responsive project links */
+  .desc a {
+    word-break: break-word;
+  }
+  
+  /* Better mobile typography for content */
+  .desc li, .desc p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* Mobile-friendly tech stack */
+  .interests .icon-box {
+    margin-bottom: 15px;
+  }
+  
+  .tech-icon {
+    max-height: 40px;
+  }
+  
+  /* Better mobile spacing */
+  .py-4 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+/* Very small screens - phones in portrait */
+@media (max-width: 480px) {
+  /* Smaller hero text for very small screens */
+  .hero-h1, .highlight-light {
+    font-size: 10vw;
+    line-height: 1.3;
+    padding: 0 15px;
+  }
+  
+  .intro-text {
+    font-size: 22px;
+    line-height: 1.4;
+    padding: 0 15px;
+  }
+  
+  /* Smaller display headings */
+  .display-4 {
+    font-size: 1.8rem;
+  }
+  
+  /* Compact social icons */
+  .fa {
+    padding: 12px;
+    font-size: 18px;
+    margin: 3px;
+  }
+  
+  /* Smaller images for very small screens */
+  .artist img, .threed img, .cass img {
+    max-width: 200px;
+  }
+  
+  /* Better SVG sizing */
+  svg {
+    width: 90vw;
+    height: 25vh;
+  }
+  
+  svg text {
+    font-size: 2.5rem;
+  }
+}
